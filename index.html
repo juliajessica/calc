@@ -12,21 +12,49 @@
       <div class="jumbotron text-center">
         <h1>Calculator</h1>
       </div>
-      <form id="add">
+      <form id="calculator">
         <div class="form-group">
-          <label for="add1">1st number:</label>
-          <input id="add1" class="form-control" type="text">
+          <label for="input1">1st number:</label>
+          <input id="input1" class="form-control" type="text">
         </div>
         <div class="form-group">
-          <label for="add2">2nd number:</label>
-          <input id="add2" class="form-control" type="text">
+          <label for="input2">2nd number:</label>
+          <input id="input2" class="form-control" type="text">
         </div>
-        <div class="text-center">
-          <button type="submit" class="btn btn-danger bg-primary:hover mx-auto">Add!</button>
+        <div class="radio">
+         <label>
+           <input type="radio" name="operator" value="add" checked>
+           add
+         </label>
         </div>
+         <div class="radio">
+           <label>
+             <input type="radio" name="operator" value="subtract">
+             subtract
+           </label>
+         </div>
+         <div class="radio">
+           <label>
+             <input type="radio" name="operator" value="multiply">
+             multiply
+           </label>
+           </div>
+         <div class="radio">
+           <label>
+             <input type="radio" name="operator" value="divide">
+             divide
+           </label>
+         </div>
+         <div class="text-center">
+           <button type="submit" class="btn btn-danger bg-primary:hover mx-auto">Calculate!</button>
+         </div>
+        </form>
+      <div id="output"></div>
+    </div>
+  </body>
+ </html>
 
-      </form>
-      <form id="subtraction">
+      <!-- <form id="subtraction">
         <div class="form-group">
           <label for="subtraction1">1st number:</label>
           <input id="subtraction1" class="form-control" type="text">
@@ -66,12 +94,7 @@
         <div class="text-center">
           <button type="submit" class="btn btn-danger bg-primary:hover mx-auto">divide!</button>
         </div>
-      </form>
-      <div id="output">
+      </form> -->
 
-      </div>
-    </div>
-  </body>
-</html>
 
 <!-- btn-block  -->
